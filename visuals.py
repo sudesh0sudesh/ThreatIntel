@@ -14,11 +14,7 @@ import random
 #combining all the data and zipping them to form single file.
 #easy for iteration
 
-<<<<<<< HEAD
-image_path=""
-=======
 image_path="static/images/"
->>>>>>> new_commit
 templates="templates/"
 
 def new_net_props():
@@ -99,17 +95,6 @@ def visual():
             
         net.add_node(src, src, title=des,shape="star")
         if(tdes_stix["type"]=="attack-pattern"):
-<<<<<<< HEAD
-            net.add_node(dst, dst,title=tdes_html, shape="image", image=url_for("static",filename="attack_pattern.png"))
-        elif(tdes_stix["type"]=="malware"):
-            net.add_node(dst, dst,title=tdes_html, shape="image", image=url_for("static",filename="malware.png"))
-        elif(tdes_stix["type"]=="intrusion-set"):
-            net.add_node(dst, dst,title=tdes_html, shape="image", image=url_for("static",filename="intrusion_set.png"))
-        elif(tdes_stix["type"]=="tool"):
-            net.add_node(dst, dst,title=tdes_html, shape="image", image=url_for("static",filename="tool.png"))
-        elif(tdes_stix["type"]=="course-of-action"):
-            net.add_node(dst, dst,title=tdes_html, shape="image", image=url_for("static",filename="course_of_action.png"))
-=======
             net.add_node(dst, dst,title=tdes_html, shape="image", image="https://oasis-open.github.io/cti-documentation/img/icons/attack_pattern.png")
         elif(tdes_stix["type"]=="malware"):
             net.add_node(dst, dst,title=tdes_html, shape="image", image="https://oasis-open.github.io/cti-documentation/img/icons/malware.png")
@@ -119,7 +104,6 @@ def visual():
             net.add_node(dst, dst,title=tdes_html, shape="image", image="https://oasis-open.github.io/cti-documentation/img/icons/tool.png")
         elif(tdes_stix["type"]=="course-of-action"):
             net.add_node(dst, dst,title=tdes_html, shape="image", image="https://oasis-open.github.io/cti-documentation/img/icons/course_of_action.png")
->>>>>>> new_commit
         else:
             net.add_node(dst, dst,title=tdes_html, shape="dot")
         net.add_edge(src,dst,label=rel, color="#0D77EE",)
