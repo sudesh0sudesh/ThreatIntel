@@ -14,7 +14,7 @@ import random
 #easy for iteration
 
 image_path="/static/images/"
-templates="templates\/"
+templates="templates/"
 
 def new_net_props():
   net = Network(notebook=False,height='100%', width='50%', bgcolor='#222222', font_color='white')
