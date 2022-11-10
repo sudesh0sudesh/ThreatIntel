@@ -13,7 +13,7 @@ import random
 #combining all the data and zipping them to form single file.
 #easy for iteration
 
-image_path="static/images/"
+image_path="/app/static/Images"
 templates="templates/"
 
 def new_net_props():
