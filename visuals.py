@@ -13,7 +13,7 @@ import random
 #combining all the data and zipping them to form single file.
 #easy for iteration
 
-image_path="/app/static/Images"
+image_path="static/Images"
 templates="templates/"
 
 def new_net_props():
@@ -94,15 +94,15 @@ def visual():
             
         net.add_node(src, src, title=des,shape="star")
         if(tdes_stix["type"]=="attack-pattern"):
-            net.add_node(dst, dst,title=tdes_html, shape="image", image=image_path+"attack_pattern.png")
+            net.add_node(dst, dst,title=tdes_html, shape="image", image="{{ url_for('static', filename='Images/attack_pattern.png') }}")
         elif(tdes_stix["type"]=="malware"):
-            net.add_node(dst, dst,title=tdes_html, shape="image", image=image_path+"malware.png")
+            net.add_node(dst, dst,title=tdes_html, shape="image", image="{{ url_for('static', filename='Images/malware.png') }}")
         elif(tdes_stix["type"]=="intrusion-set"):
-            net.add_node(dst, dst,title=tdes_html, shape="image", image=image_path+"intrusion_set.png")
+            net.add_node(dst, dst,title=tdes_html, shape="image", image="{{ url_for('static', filename='Images/intrusion_set.png') }}")
         elif(tdes_stix["type"]=="tool"):
-            net.add_node(dst, dst,title=tdes_html, shape="image", image=image_path+"tool.png")
+            net.add_node(dst, dst,title=tdes_html, shape="image", image="{{ url_for('static', filename='Images/tool.png') }}")
         elif(tdes_stix["type"]=="course-of-action"):
-            net.add_node(dst, dst,title=tdes_html, shape="image", image=image_path+"course_of_action.png")
+            net.add_node(dst, dst,title=tdes_html, shape="image", image="{{ url_for('static', filename='Images/course_of_action.png') }}")
         else:
             net.add_node(dst, dst,title=tdes_html, shape="dot")
         net.add_edge(src,dst,label=rel, color="#0D77EE",)
