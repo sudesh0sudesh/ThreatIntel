@@ -1,1 +1,1 @@
-web: gunicorn threatintel99:init
+web: gunicorn init:app
