@@ -1,0 +1,25 @@
+{
+    "type": "relationship",
+    "id": "relationship--c6172742-12ae-4d3f-9fd6-194cfdc93de7",
+    "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "created": "2022-02-01T20:08:16.704Z",
+    "modified": "2022-04-16T21:49:07.613Z",
+    "relationship_type": "uses",
+    "description": "[Ferocious](https://attack.mitre.org/software/S0679) can use <code>GET.WORKSPACE</code> in Microsoft Excel to determine the OS version of the compromised host.(Citation: Kaspersky WIRTE November 2021)",
+    "source_ref": "malware--73d08401-005f-4e1f-90b9-8f45d120879f",
+    "target_ref": "attack-pattern--354a7f88-63fb-41b5-a801-ce3b377b36f1",
+    "external_references": [
+        {
+            "source_name": "Kaspersky WIRTE November 2021",
+            "description": "Yamout, M. (2021, November 29). WIRTE’s campaign in the Middle East ‘living off the land’ since at least 2019. Retrieved February 1, 2022.",
+            "url": "https://securelist.com/wirtes-campaign-in-the-middle-east-living-off-the-land-since-at-least-2019/105044"
+        }
+    ],
+    "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+    ],
+    "x_mitre_attack_spec_version": "2.1.0",
+    "x_mitre_deprecated": false,
+    "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "x_mitre_version": "1.0"
+}

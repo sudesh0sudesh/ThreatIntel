@@ -1,0 +1,23 @@
+{
+    "type": "relationship",
+    "id": "relationship--bc0a285a-fcee-4a9a-9d74-9f723d6c20c2",
+    "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "created": "2021-11-24T20:17:35.466Z",
+    "modified": "2021-11-24T20:17:35.466Z",
+    "relationship_type": "uses",
+    "description": "[LazyScripter](https://attack.mitre.org/groups/G0140) has used batch files to deploy open-source and multi-stage RATs.(Citation: MalwareBytes LazyScripter Feb 2021)",
+    "source_ref": "intrusion-set--abc5a1d4-f0dc-49d1-88a1-4a80e478bb03",
+    "target_ref": "attack-pattern--d1fcf083-a721-4223-aedf-bf8960798d62",
+    "external_references": [
+        {
+            "source_name": "MalwareBytes LazyScripter Feb 2021",
+            "description": "Jazi, H. (2021, February). LazyScripter: From Empire to double RAT. Retrieved November 24, 2021.",
+            "url": "https://www.malwarebytes.com/resources/files/2021/02/lazyscripter.pdf"
+        }
+    ],
+    "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+    ],
+    "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "x_mitre_version": "1.0"
+}

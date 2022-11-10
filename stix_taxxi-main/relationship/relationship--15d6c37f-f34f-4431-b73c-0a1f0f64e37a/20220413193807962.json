@@ -1,0 +1,25 @@
+{
+    "type": "relationship",
+    "id": "relationship--15d6c37f-f34f-4431-b73c-0a1f0f64e37a",
+    "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "created": "2022-04-13T19:38:07.962Z",
+    "modified": "2022-04-13T19:38:07.962Z",
+    "relationship_type": "uses",
+    "description": "[Flagpro](https://attack.mitre.org/software/S0696) has the ability to wait for a specified time interval between communicating with and executing commands from C2.(Citation: NTT Security Flagpro new December 2021)",
+    "source_ref": "malware--592260fb-dd5c-4a30-8d99-106a0485be0d",
+    "target_ref": "attack-pattern--4eeaf8a9-c86b-4954-a663-9555fb406466",
+    "external_references": [
+        {
+            "source_name": "NTT Security Flagpro new December 2021",
+            "description": "Hada, H. (2021, December 28).  Flagpro The new malware used by BlackTech. Retrieved March 25, 2022.",
+            "url": "https://insight-jp.nttsecurity.com/post/102hf3q/flagpro-the-new-malware-used-by-blacktech"
+        }
+    ],
+    "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+    ],
+    "x_mitre_attack_spec_version": "2.1.0",
+    "x_mitre_deprecated": false,
+    "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "x_mitre_version": "0.1"
+}

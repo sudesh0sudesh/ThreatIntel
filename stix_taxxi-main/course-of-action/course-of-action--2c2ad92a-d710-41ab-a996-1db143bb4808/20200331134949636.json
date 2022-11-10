@@ -1,0 +1,24 @@
+{
+    "type": "course-of-action",
+    "id": "course-of-action--2c2ad92a-d710-41ab-a996-1db143bb4808",
+    "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "created": "2019-06-11T17:14:35.170Z",
+    "modified": "2020-03-31T13:49:49.636Z",
+    "name": "User Account Control",
+    "description": "Configure Windows User Account Control to mitigate risk of adversaries obtaining elevated process access.",
+    "external_references": [
+        {
+            "source_name": "mitre-attack",
+            "url": "https://attack.mitre.org/mitigations/M1052",
+            "external_id": "M1052"
+        }
+    ],
+    "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+    ],
+    "x_mitre_domains": [
+        "enterprise-attack"
+    ],
+    "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "x_mitre_version": "1.1"
+}

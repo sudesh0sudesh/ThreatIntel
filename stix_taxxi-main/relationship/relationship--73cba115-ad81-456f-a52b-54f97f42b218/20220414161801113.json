@@ -1,0 +1,18 @@
+{
+    "type": "relationship",
+    "id": "relationship--73cba115-ad81-456f-a52b-54f97f42b218",
+    "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "created": "2022-03-30T14:26:51.843Z",
+    "modified": "2022-04-14T16:18:01.113Z",
+    "relationship_type": "detects",
+    "description": "Monitor for telemetry that provides context of security software services being disabled or modified.",
+    "source_ref": "x-mitre-data-component--74fa567d-bc90-425c-8a41-3c703abb221c",
+    "target_ref": "attack-pattern--ac08589e-ee59-4935-8667-d845e38fe579",
+    "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+    ],
+    "x_mitre_attack_spec_version": "2.1.0",
+    "x_mitre_deprecated": false,
+    "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "x_mitre_version": "0.1"
+}

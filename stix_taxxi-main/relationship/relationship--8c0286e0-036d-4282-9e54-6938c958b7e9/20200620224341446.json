@@ -1,0 +1,16 @@
+{
+    "type": "relationship",
+    "id": "relationship--8c0286e0-036d-4282-9e54-6938c958b7e9",
+    "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "created": "2019-06-21T16:52:53.737Z",
+    "modified": "2020-06-20T22:43:41.446Z",
+    "relationship_type": "mitigates",
+    "description": "Certain developer utilities should be blocked or restricted if not required.",
+    "source_ref": "course-of-action--47e0e9fe-96ce-4f65-8bb1-8be1feacb5db",
+    "target_ref": "attack-pattern--ff25900d-76d5-449b-a351-8824e62fc81b",
+    "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+    ],
+    "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "x_mitre_version": "1.0"
+}

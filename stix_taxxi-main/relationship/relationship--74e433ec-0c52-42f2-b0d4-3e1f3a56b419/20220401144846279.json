@@ -1,0 +1,16 @@
+{
+    "type": "relationship",
+    "id": "relationship--74e433ec-0c52-42f2-b0d4-3e1f3a56b419",
+    "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "created": "2019-06-13T16:04:04.180Z",
+    "modified": "2022-04-01T14:48:46.279Z",
+    "relationship_type": "mitigates",
+    "description": "Use multi-factor authentication for user and privileged accounts.",
+    "source_ref": "course-of-action--b045d015-6bed-4490-bd38-56b41ece59a0",
+    "target_ref": "attack-pattern--a10641f4-87b4-45a3-a906-92a149cb2c27",
+    "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+    ],
+    "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "x_mitre_version": "1.0"
+}

@@ -1,0 +1,2 @@
+from taxii2client.v21 import Server
+server = Server('https://example.com/taxii2/', user='user_id', password='user_password')

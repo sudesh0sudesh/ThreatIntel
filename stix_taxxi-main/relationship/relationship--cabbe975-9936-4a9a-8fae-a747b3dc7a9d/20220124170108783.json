@@ -1,0 +1,23 @@
+{
+    "type": "relationship",
+    "id": "relationship--cabbe975-9936-4a9a-8fae-a747b3dc7a9d",
+    "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "created": "2020-05-18T17:31:39.413Z",
+    "modified": "2022-01-24T17:01:08.783Z",
+    "relationship_type": "uses",
+    "description": "[Maze](https://attack.mitre.org/software/S0449) has used the “Wow64RevertWow64FsRedirection” function following attempts to delete the shadow volumes, in order to leave the system in the same state as it was prior to redirection.(Citation: McAfee Maze March 2020)\t",
+    "source_ref": "malware--d9f7383c-95ec-4080-bbce-121c9384457b",
+    "target_ref": "attack-pattern--799ace7f-e227-4411-baa0-8868704f2a69",
+    "external_references": [
+        {
+            "source_name": "McAfee Maze March 2020",
+            "description": "Mundo, A. (2020, March 26). Ransomware Maze. Retrieved May 18, 2020.",
+            "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/ransomware-maze/"
+        }
+    ],
+    "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+    ],
+    "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "x_mitre_version": "1.0"
+}

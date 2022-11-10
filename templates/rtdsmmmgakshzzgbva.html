@@ -1,0 +1,91 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@latest/styles/vis-network.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@latest/dist/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 50%;
+            height: 100%;
+            background-color: #222222;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([]);
+        edges = new vis.DataSet([]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {"interaction": {"tooltipDelay": 86500000, "zoomSpeed": 0.01}, "edges": {"arrows": {"to": {"enabled": true}, "color": "#0BF607", "hightlight": "#0D77EE"}, "color": {"color": "#0D77EE", "hightlight": "green", "inherit": false}}, "nodes": {"shadow": {"enabled": true}, "shape": "triangle", "shapeProperties": {"borderDashes": true, "borderRadius": 19}, "size": 20}};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+		
+		network.on("click", function (params) {
+        params.event = "[original event]";
+		var json_data = JSON.stringify(nodes.get(params.nodes[0]));
+		const json_obj = JSON.parse(json_data);
+        document.getElementById("eventSpanHeading").innerText = "Nodal Information";
+        document.getElementById("eventSpanContent").innerHTML = json_obj['title'];
+        
+      }); 
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+<h2 id="eventSpanHeading"></h2>
+<p id="eventSpanContent"></p>
+</body>
+</html>

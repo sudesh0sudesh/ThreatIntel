@@ -1,0 +1,16 @@
+{
+    "type": "relationship",
+    "id": "relationship--9e753c36-66d8-4f48-8b06-fbb9fdc92f76",
+    "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "created": "2021-10-12T06:45:36.902Z",
+    "modified": "2021-10-15T19:48:30.034Z",
+    "relationship_type": "mitigates",
+    "description": "Enable the Hardened Runtime capability when developing applications. Do not include the <code>com.apple.security.get-task-allow</code> entitlement with the value set to any variation of true. ",
+    "source_ref": "course-of-action--25dc1ce8-eb55-4333-ae30-a7cb4f5894a1",
+    "target_ref": "attack-pattern--8252f135-ed26-4ce1-ae61-f26e94429a19",
+    "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+    ],
+    "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "x_mitre_version": "1.0"
+}

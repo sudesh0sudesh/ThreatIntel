@@ -1,0 +1,23 @@
+{
+    "type": "relationship",
+    "id": "relationship--03527dc8-25a6-479d-b00f-90b543944da1",
+    "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "created": "2021-10-01T01:57:31.863Z",
+    "modified": "2021-10-01T01:57:31.863Z",
+    "relationship_type": "uses",
+    "description": "[TeamTNT](https://attack.mitre.org/groups/G0139) has established tmate sessions for C2 communications.(Citation: Unit 42 Hildegard Malware)",
+    "source_ref": "intrusion-set--35d1b3be-49d4-42f1-aaa6-ef159c880bca",
+    "target_ref": "attack-pattern--4061e78c-1284-44b4-9116-73e4ac3912f7",
+    "external_references": [
+        {
+            "source_name": "Unit 42 Hildegard Malware",
+            "description": "Chen, J. et al. (2021, February 3). Hildegard: New TeamTNT Cryptojacking Malware Targeting Kubernetes. Retrieved April 5, 2021.",
+            "url": "https://unit42.paloaltonetworks.com/hildegard-malware-teamtnt/"
+        }
+    ],
+    "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+    ],
+    "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "x_mitre_version": "1.0"
+}

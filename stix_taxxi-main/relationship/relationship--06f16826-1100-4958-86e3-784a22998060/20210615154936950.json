@@ -1,0 +1,23 @@
+{
+    "type": "relationship",
+    "id": "relationship--06f16826-1100-4958-86e3-784a22998060",
+    "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "created": "2021-06-15T15:49:36.950Z",
+    "modified": "2021-06-15T15:49:36.950Z",
+    "relationship_type": "uses",
+    "description": "[Ryuk](https://attack.mitre.org/software/S0446) can use anti-disassembly and code transformation obfuscation techniques.(Citation: CrowdStrike Wizard Spider October 2020)",
+    "source_ref": "malware--a020a61c-423f-4195-8c46-ba1d21abba37",
+    "target_ref": "attack-pattern--b3d682b6-98f2-4fb0-aa3b-b4df007ca70a",
+    "external_references": [
+        {
+            "source_name": "CrowdStrike Wizard Spider October 2020",
+            "description": "Podlosky, A., Hanel, A. et al. (2020, October 16). WIZARD SPIDER Update: Resilient, Reactive and Resolute. Retrieved June 15, 2021.",
+            "url": "https://www.crowdstrike.com/blog/wizard-spider-adversary-update/"
+        }
+    ],
+    "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+    ],
+    "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "x_mitre_version": "1.0"
+}

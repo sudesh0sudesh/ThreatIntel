@@ -1,0 +1,24 @@
+{
+    "type": "course-of-action",
+    "id": "course-of-action--b9f0c069-abbe-4a07-a245-2481219a1463",
+    "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "created": "2019-06-11T17:06:56.230Z",
+    "modified": "2020-03-31T13:08:03.851Z",
+    "name": "Application Isolation and Sandboxing",
+    "description": "Restrict execution of code to a virtual environment on or in transit to an endpoint system.",
+    "external_references": [
+        {
+            "source_name": "mitre-attack",
+            "url": "https://attack.mitre.org/mitigations/M1048",
+            "external_id": "M1048"
+        }
+    ],
+    "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+    ],
+    "x_mitre_domains": [
+        "enterprise-attack"
+    ],
+    "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "x_mitre_version": "1.1"
+}

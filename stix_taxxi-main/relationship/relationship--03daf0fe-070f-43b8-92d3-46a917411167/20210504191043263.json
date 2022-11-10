@@ -1,0 +1,23 @@
+{
+    "type": "relationship",
+    "id": "relationship--03daf0fe-070f-43b8-92d3-46a917411167",
+    "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "created": "2021-05-04T19:10:43.263Z",
+    "modified": "2021-05-04T19:10:43.263Z",
+    "relationship_type": "uses",
+    "description": "[TRITON](https://attack.mitre.org/software/S0609)’s TsLow python module pings controllers over the TriStation protocol.(Citation: FireEye TRITON 2017) ",
+    "source_ref": "malware--93ae2edf-a598-4d2d-acd7-bcae0c021923",
+    "target_ref": "attack-pattern--e358d692-23c0-4a31-9eb6-ecc13a8d7735",
+    "external_references": [
+        {
+            "source_name": "FireEye TRITON 2017",
+            "description": "Johnson, B, et. al. (2017, December 14). Attackers Deploy New ICS Attack Framework \"TRITON\" and Cause Operational Disruption to Critical Infrastructure. Retrieved January 6, 2021.",
+            "url": "https://www.fireeye.com/blog/threat-research/2017/12/attackers-deploy-new-ics-attack-framework-triton.html"
+        }
+    ],
+    "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+    ],
+    "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "x_mitre_version": "1.0"
+}

@@ -1,0 +1,25 @@
+{
+    "type": "relationship",
+    "id": "relationship--68146568-bc1f-49b6-9477-c6c06b0fa39c",
+    "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "created": "2022-04-20T05:18:46.761Z",
+    "modified": "2022-04-20T05:22:43.028Z",
+    "relationship_type": "mitigates",
+    "description": "Set group policies to restrict file permissions to the <code>~/launchagents</code> folder.(Citation: piazza launch agent mitigation)",
+    "source_ref": "course-of-action--987988f0-cf86-4680-a875-2f6456ab2448",
+    "target_ref": "attack-pattern--d10cbd34-42e3-45c0-84d2-535a09849584",
+    "external_references": [
+        {
+            "source_name": "piazza launch agent mitigation",
+            "description": "Antonio Piazza (4n7m4n). (2021, November 23). Defeating Malicious Launch Persistence. Retrieved April 19, 2022.",
+            "url": "https://antman1p-30185.medium.com/defeating-malicious-launch-persistence-156e2b40fc67"
+        }
+    ],
+    "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+    ],
+    "x_mitre_attack_spec_version": "2.1.0",
+    "x_mitre_deprecated": false,
+    "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "x_mitre_version": "0.1"
+}

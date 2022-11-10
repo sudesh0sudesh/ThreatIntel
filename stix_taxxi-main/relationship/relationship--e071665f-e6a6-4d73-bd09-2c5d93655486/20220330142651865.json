@@ -1,0 +1,16 @@
+{
+    "type": "relationship",
+    "id": "relationship--e071665f-e6a6-4d73-bd09-2c5d93655486",
+    "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "created": "2022-03-30T14:26:51.865Z",
+    "modified": "2022-03-30T14:26:51.865Z",
+    "relationship_type": "detects",
+    "description": "Monitor for newly constructed network connections that are sent or received by untrusted hosts. ",
+    "source_ref": "x-mitre-data-component--181a9f8c-c780-4f1f-91a8-edb770e904ba",
+    "target_ref": "attack-pattern--4061e78c-1284-44b4-9116-73e4ac3912f7",
+    "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+    ],
+    "x_mitre_attack_spec_version": "2.1.0",
+    "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5"
+}

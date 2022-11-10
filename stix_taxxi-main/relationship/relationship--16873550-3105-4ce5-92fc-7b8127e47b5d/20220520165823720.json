@@ -1,0 +1,25 @@
+{
+    "type": "relationship",
+    "id": "relationship--16873550-3105-4ce5-92fc-7b8127e47b5d",
+    "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "created": "2021-01-04T20:42:22.133Z",
+    "modified": "2022-05-20T16:58:23.720Z",
+    "relationship_type": "uses",
+    "description": "[Industroyer](https://attack.mitre.org/software/S0604)’s data wiper module clears registry keys and overwrites both ICS configuration and Windows files.(Citation: Dragos Crashoverride 2017)",
+    "source_ref": "malware--e401d4fe-f0c9-44f0-98e6-f93487678808",
+    "target_ref": "attack-pattern--d45a3d09-b3cf-48f4-9f0f-f521ee5cb05c",
+    "external_references": [
+        {
+            "source_name": "Dragos Crashoverride 2017",
+            "description": "Dragos Inc.. (2017, June 13). CRASHOVERRIDE Analysis of the Threat to Electric Grid Operations. Retrieved December 18, 2020.",
+            "url": "https://dragos.com/blog/crashoverride/CrashOverride-01.pdf"
+        }
+    ],
+    "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+    ],
+    "x_mitre_attack_spec_version": "2.1.0",
+    "x_mitre_deprecated": false,
+    "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "x_mitre_version": "1.0"
+}

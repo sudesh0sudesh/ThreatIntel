@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<style>
+  table, th, td {
+    border:1px solid black;
+  }
+  </style>
+    <title>CTI Server</title>
+  </head>
+  <body>
+    <h1> </h1>
+    <div class="container ">
+    </br>
+  </br>
+</br>
+    <form method="POST" action="/" class="row g-10">
+          
+        <div class="col-3"></div>      
+        <div class="col-auto"><label class="form-control" >Enter IOC: <input type="text" name="ioc" placeholder="attack-pattern--*****"></label></div>
+        <div class="col-auto"><label class="form-control" >Date: <input type="date" name="date"></label></div>
+        <div class="col-auto"><button type="submit" class="btn btn-primary">Submit</button></div>
+    </form>
+        </br>
+        </br>
+        </br>
+        </br>
+    <p>{{content}}</p>
+    {% if IOC_MATCH_NULL!=undefined %}
+    <h4>{{IOC_MATCH_NULL}}</h4>
+    {% endif %}
+  
+  {% if row_data!=undefined %}
+  <h4>No ID found with the string you entered, these might be the one you are looking</h4>
+    <table class="table col-auto">
+
+      <thead>
+      <tr class="col-auto">
+        {% for header in headings %}
+        <th >{{header}}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+
+     
+     <tbody>
+      {% for key, value in row_data.items() %}
+     <tr >
+
+      <td>
+      {{key}}
+      </td>
+    
+      <td>
+        {{ value }}  
+      </td>
+
+     </tr>
+     {% endfor %}
+    </tbody>
+    
+
+    </table>
+    {% endif %}
+  </div>
+  </body>
+</html>

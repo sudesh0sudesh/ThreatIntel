@@ -1,0 +1,23 @@
+{
+    "type": "relationship",
+    "id": "relationship--a498d3ae-f944-4ad0-af8e-f92a78f04feb",
+    "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "created": "2021-01-25T13:58:25.278Z",
+    "modified": "2021-03-12T21:10:53.209Z",
+    "relationship_type": "uses",
+    "description": "[Dtrack](https://attack.mitre.org/software/S0567) has used a dropper that embeds an encrypted payload as extra data.(Citation: Securelist Dtrack)",
+    "source_ref": "malware--f8774023-8021-4ece-9aca-383ac89d2759",
+    "target_ref": "attack-pattern--b3d682b6-98f2-4fb0-aa3b-b4df007ca70a",
+    "external_references": [
+        {
+            "source_name": "Securelist Dtrack",
+            "description": "Konstantin Zykov. (2019, September 23). Hello! My name is Dtrack. Retrieved January 20, 2021.",
+            "url": "https://securelist.com/my-name-is-dtrack/93338/"
+        }
+    ],
+    "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+    ],
+    "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "x_mitre_version": "1.0"
+}

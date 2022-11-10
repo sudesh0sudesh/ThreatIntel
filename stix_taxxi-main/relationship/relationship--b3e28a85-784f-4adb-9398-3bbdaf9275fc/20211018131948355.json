@@ -1,0 +1,23 @@
+{
+    "type": "relationship",
+    "id": "relationship--b3e28a85-784f-4adb-9398-3bbdaf9275fc",
+    "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "created": "2021-09-21T15:45:10.178Z",
+    "modified": "2021-10-18T13:19:48.355Z",
+    "relationship_type": "uses",
+    "description": "[Turian](https://attack.mitre.org/software/S0647) can insert pseudo-random characters into its network encryption setup.(Citation: ESET BackdoorDiplomacy Jun 2021)",
+    "source_ref": "malware--350f12cf-fd3b-4dad-b323-14b943090df4",
+    "target_ref": "attack-pattern--f7c0689c-4dbd-489b-81be-7cb7c7079ade",
+    "external_references": [
+        {
+            "source_name": "ESET BackdoorDiplomacy Jun 2021",
+            "description": "Adam Burgher. (2021, June 10). BackdoorDiplomacy: Upgrading from Quarian to Turian. Retrieved September 1, 2021",
+            "url": "https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/"
+        }
+    ],
+    "object_marking_refs": [
+        "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+    ],
+    "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+    "x_mitre_version": "1.0"
+}
