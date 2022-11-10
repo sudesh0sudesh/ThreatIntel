@@ -13,11 +13,12 @@ import random
 #combining all the data and zipping them to form single file.
 #easy for iteration
 
-image_path="images/"
+image_path="/static/images/"
+templates="templates\/"
 
 def new_net_props():
   net = Network(notebook=False,height='100%', width='50%', bgcolor='#222222', font_color='white')
-  
+  net.set_template("templates/template.html")
   net.set_options('''const options = {
   "interaction": {
     "tooltipDelay": 86500000,
@@ -55,7 +56,7 @@ def new_net_props():
 
 def dataRead():
    
-    df = pd.read_excel("C:/Users/sudes/Desktop/ThreatIntel/data.xls")
+    df = pd.read_excel("data.xls")
     source=df["source"]
     target= df["Target"]
     relation= df["Relation"]
@@ -112,11 +113,10 @@ def visual():
     #net.write_html("template.html")
     #net.template="template.html"
     #net.show("sample1.html")
-    net.set_template("C:/Users/sudes/Desktop/ThreatIntel/templates/template.html")
+    #net.set_template("templates/template.html")
     
-    net.write_html("templates/"+new_random+".html")
-    net.show("templates\\"+new_random+".html")
-    
+    net.write_html(name=templates+new_random+".html")
+    return(new_random+".html")
 
 #visual()
 

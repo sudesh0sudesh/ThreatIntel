@@ -25,7 +25,7 @@ def sdo_creater_date(rels,date_stix):
 def sdo_creater(rels):
     sdos=[]
     sdos_rel=[]
-    filesystemsource = FileSystemSource("C:/Users/sudes/Desktop/ThreatIntel/stix_taxxi-main", allow_custom=True)
+    filesystemsource = FileSystemSource("stix_taxxi-main", allow_custom=True)
     for item in rels:
         key=list(item.keys())[0]
         sdo_r=item[key]
@@ -36,7 +36,7 @@ def sdo_creater(rels):
 
 
 def getRelationships(id):
-    path="C:/Users/sudes/Desktop/ThreatIntel/Relations/"
+    path="Relations/"
 
     relas=open(path+"relations.json","r")
     data = json.loads(relas.read())
@@ -56,7 +56,7 @@ def writer(ioc_data,date_input):
     wBook = xlwt.Workbook()
     wSheet = wBook.add_sheet('Data')  # creating Workbook and storing data
 
-    filesystemsource = FileSystemSource("C:/Users/sudes/Desktop/ThreatIntel/stix_taxxi-main", allow_custom=True)
+    filesystemsource = FileSystemSource("stix_taxxi-main", allow_custom=True)
 
     if(not_null_check(date_input)):
         date_string=utils.format_datetime(datetime.strptime(date_input,"%Y-%m-%d"))

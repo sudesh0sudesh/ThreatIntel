@@ -6,7 +6,7 @@ row_counter=0
 
 
 data={}
-filesystemsource = FileSystemSource("C:/Users/sudes/Desktop/ThreatIntel/stix_taxxi-main", allow_custom=True)
+filesystemsource = FileSystemSource("stix_taxxi-main", allow_custom=True)
 
 filter_objs = {"techniques": Filter("type", "=", "attack-pattern"),"malware": Filter("type", "=", "malware"),}
 
