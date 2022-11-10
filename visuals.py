@@ -1,5 +1,4 @@
 from pyvis.network import Network
-from matplotlib import pyplot as plt
 from stix2 import parse
 import pandas as pd
 import networkx as nx

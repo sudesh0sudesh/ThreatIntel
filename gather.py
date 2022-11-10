@@ -9,7 +9,7 @@ import time
 def sdo_creater_date(rels,date_stix):
     sdos=[]
     sdos_rel=[]
-    filesystemsource = FileSystemSource("C:/Users/sudes/Desktop/ThreatIntel/stix_taxxi-main", allow_custom=True)
+    filesystemsource = FileSystemSource("stix_taxxi-main", allow_custom=True)
     for item in rels:
         key=list(item.keys())[0]
         sdo_r=item[key]
