@@ -6,8 +6,8 @@ import gather
 import os
 import converter
 
-app = Flask(__name__)
-app.wsgi_app = WhiteNoise(app.wsgi_app, root="static/")
+app = Flask(__name__,static_folder="static/images/")
+app.wsgi_app = WhiteNoise(app.wsgi_app, root="static/images/")
 
 def test():
     print("Hello")
