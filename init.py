@@ -1,11 +1,13 @@
 from flask import Flask, render_template, request, redirect,url_for
+from whitenoise import WhiteNoise
 from markupsafe import escape
 import visuals
 import gather
 import os
 import converter
 
-app = Flask(__name__, static_url_path='/static')
+app = Flask(__name__)
+app.wsgi_app = WhiteNoise(app.wsgi_app, root="")
 
 def test():
     print("Hello")
@@ -44,12 +46,13 @@ def home():
     return render_template("index.html")
 @app.route("/graph",methods=['GET', 'POST'])
 def Iocfound():
+    capture_name=request.args["pathf"]
     try:
-        capture_name=request.args["pathf"]
+        
         return render_template(capture_name)
     except Exception as e:
         print(e)
-        return render_template("index.html")
+        return render_template(capture_name)
 
     
 if __name__ == "__main__":
