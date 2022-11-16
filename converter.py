@@ -33,11 +33,15 @@ def search(search_string):
     for item in data:
         for iter in range(0,len(data[item])):
             ioc=data[item][iter]
+            New_key="aliases"
             #print(ioc["name"])
             
             if(substring_true(search_string.upper(),ioc["name"].upper())):
                 print(ioc["name"])
                 ioc_dictionary[ioc["name"]]=ioc["id"]
+            elif(substring_true(search_string.upper(),ioc["description"].upper())):
+                ioc_dictionary[ioc["name"]]=ioc["id"]
+            
     
     return ioc_dictionary
             
