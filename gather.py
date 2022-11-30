@@ -168,3 +168,5 @@ def writer(ioc_data,date_input):
         return 1
 
 
+if __name__ == "__main__":
+    writer("attack-pattern--0a3ead4e-6d47-4ccb-854c-a6a4f9d96b22")

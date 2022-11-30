@@ -48,6 +48,7 @@ def search(search_string):
                 
                 
     
+if __name__ == "__main__":
+    ioc_check("test")
 
-ioc_check("test")
 
