@@ -1,15 +1,20 @@
 from importlib.resources import path
-from taxii2client.v20 import Collection, Server
 from stix2 import FileSystemSource,utils
-from datetime import date,datetime
+from datetime import datetime
 import xlwt
 import json
 import time
 
 def sdo_creater_date(rels,date_stix):
+
+    """
+    @sdo_creater_date is the method for getting related nodes  data along with their dates.
+    checks for the nodes modified date to validate whether it is below the date field.
+    """
     sdos=[]
     sdos_rel=[]
     filesystemsource = FileSystemSource("stix_taxxi-main", allow_custom=True)
+
     for item in rels:
         key=list(item.keys())[0]
         sdo_r=item[key]
@@ -23,6 +28,10 @@ def sdo_creater_date(rels,date_stix):
     return(sdos,sdos_rel)
 
 def sdo_creater(rels):
+    """
+    @sdo_creater is the method for getting related nodes
+    """
+
     sdos=[]
     sdos_rel=[]
     filesystemsource = FileSystemSource("stix_taxxi-main", allow_custom=True)
@@ -117,6 +126,7 @@ def writer(ioc_data,date_input):
 
     except Exception as e:
         print("Issue with the first major loop")
+         #exception handling for level one nodes.
         print(e)
         
     finally:
@@ -141,13 +151,12 @@ def writer(ioc_data,date_input):
             sdos2=sdo_tuple2[0]
             sdos_rel2=sdo_tuple2[1]
             
-           
+             #writing the level 2 nodes on to the sheet.
                    
             for x in range(0, min(5, len(sdos2))):
                 counter = counter+1
                 wSheet.write(counter, 0, sdo_current["name"]+'/'+sdo_current["type"])
                 wSheet.write(counter, 2, sdos_rel2[x])
-                #print(sdos_rel2[x])
                 wSheet.write(counter, 1, sdos2[x]['name']+'/'+sdos2[x]["type"])
                 # description
                 wSheet.write(counter, 3, sdo_current['description'])
@@ -159,6 +168,7 @@ def writer(ioc_data,date_input):
         
     except Exception as e:
         print(e)
+        #exception handling for second level nodes.
         print("Issue with second loop")
         return 0
 

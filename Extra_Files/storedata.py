@@ -22,19 +22,19 @@ print(api_root.collections[0].url)
 
 
 #create FileSystemSource
-filesystemsource = FileSystemSource("C:/Users/sudes/Desktop/ThreatIntel/stix_taxxi-main", allow_custom=True)
-fssink =  FileSystemSink("C:/Users/sudes/Desktop/ThreatIntel/stix_taxxi-main/", allow_custom=True)
-fsstore=FileSystemStore("C:/Users/sudes/Desktop/ThreatIntel/stix_taxxi-main/", allow_custom=True)
+filesystemsource = FileSystemSource("stix_taxxi-main", allow_custom=True)
+fssink =  FileSystemSink("stix_taxxi-main/", allow_custom=True)
+fsstore=FileSystemStore("stix_taxxi-main/", allow_custom=True)
 
-#add taxii collections (server and local) to the CompositeDataSource
+#adding taxii collections of local and online sources to create a CompositeDataSource
 compositedatasource = CompositeDataSource() #This is used for use local taxii intelligence and public taxii server
 compositedatasource.add_data_sources([filesystemsource,taxiicollectionsource0])
 
 
 #MAIN
 
-#search = input("Enter the SDO you are searching: (example: malware--94379dec-5c87-49db-b36e-66abc0b81344)")
-search="malware--94379dec-5c87-49db-b36e-66abc0b81344"
+##performing search through composite data source
+search="malware**"
 print("Creating localized repository")
 
 
@@ -45,7 +45,7 @@ rels = compositedatasource.relationships(ioc["id"],target_only=False) #Get all t
 sdos = compositedatasource.related_to(ioc["id"], target_only=False) #Get all the SDOs related to the 'ioc'
 
 
-
+#writing the data to filesystem.
 
 for x in range(0,len(rels)):
     if(fsstore.get(rels[x]["id"])==None):

@@ -3,7 +3,6 @@ from whitenoise import WhiteNoise
 from markupsafe import escape
 import visuals
 import gather
-import os
 import converter
 
 app = Flask(__name__)
@@ -13,13 +12,20 @@ def test():
 
 @app.route("/",methods=['GET', 'POST'])
 def home():
-    #ioc=None
+    """
+    
+    @app.route("/",methods=['GET', 'POST']), handling both get and post requests.
+    This method is used for handling the inputs
+    The input is received is passed through escape to eliminate sensitive html charachters.
+    The input is then passed on converter to validate the input.
+    Validation is successul and we will gather the graph data and passed on to graph route render the graph.
+    Validation is not successul and we will gather similar nodes.
+    """
     if (request.method == 'POST'):
         ioc=escape(request.form.get("ioc"))
         date=request.form.get("date")
-        #submit1=request.form.get("action1")
-        #submit2=request.form.get("action2")
         capture_name="index.html"
+        #validation
         check_mark=converter.ioc_check(ioc)
         successful=gather.writer(ioc,date)
         if(check_mark and ioc!=""):
@@ -45,6 +51,9 @@ def home():
     return render_template("index.html")
 @app.route("/graph",methods=['GET', 'POST'])
 def Iocfound():
+    """
+    @Iocfound is the method to render the graph
+    """
     capture_name=request.args["pathf"]
     try:
         
@@ -55,4 +64,4 @@ def Iocfound():
 
     
 if __name__ == "__main__":
-    app.run(debug=True, port=9995)
+    app.run(debug=False, port=9995)

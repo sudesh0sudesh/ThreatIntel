@@ -1,4 +1,3 @@
-from taxii2client.v20 import Collection, Server
 from stix2 import FileSystemSource,Filter
 
 counter =0
@@ -13,6 +12,9 @@ filter_objs = {"techniques": Filter("type", "=", "attack-pattern"),"malware": Fi
 substring_true=lambda x,y: x in y
 
 def ioc_check(ioc_string):
+    """
+    This function is used for validating the ioc details entered by the user.
+    """
     ioc_data=filesystemsource.get(ioc_string)
     if(ioc_data==None):
         return 0
@@ -21,7 +23,9 @@ def ioc_check(ioc_string):
 
 
 def search(search_string):
-
+    """
+    This function is used for searching STIX-ID that user might be interested in using the keywords entered.
+    """
     ioc_dictionary={}
     try:
         for key in filter_objs:
